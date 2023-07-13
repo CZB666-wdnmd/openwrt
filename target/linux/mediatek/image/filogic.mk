@@ -408,7 +408,7 @@ define Device/xiaomi_wr30u
   BLOCKSIZE := 128k
   PAGESIZE := 2048
   KERNEL_IN_UBI := 1
-  # UBOOTENV_IN_UBI := 1
+  UBOOTENV_IN_UBI := 1
   IMAGES := sysupgrade.itb
   KERNEL_INITRAMFS_SUFFIX := -recovery.itb
   KERNEL := kernel-bin | gzip
@@ -417,8 +417,8 @@ define Device/xiaomi_wr30u
   IMAGE/sysupgrade.itb := append-kernel | \
         fit gzip $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb external-static-with-rootfs | append-metadata
   DEVICE_PACKAGES := kmod-mt7981-firmware mt7981-wo-firmware
-  # ARTIFACTS := preloader.bin bl31-uboot.fip
-  # ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr3
-  # ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot qihoo_360t7
+  ARTIFACTS := preloader.bin bl31-uboot.fip
+  ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr3
+  ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot xiaomi_wr30u
 endef
 TARGET_DEVICES += xiaomi_wr30u
