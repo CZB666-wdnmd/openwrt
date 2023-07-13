@@ -240,6 +240,7 @@
 +			label = "orange:internet";
 +			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
 +		};
++ };
 +};
 +
 +&uart0 {
