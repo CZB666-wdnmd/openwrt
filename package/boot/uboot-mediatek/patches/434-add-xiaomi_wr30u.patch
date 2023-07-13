@@ -186,6 +186,9 @@
 + */
 +
 +/dts-v1/;
++#include "mt7981.dtsi"
++#include <dt-bindings/gpio/gpio.h>
++#include <dt-bindings/input/linux-event-codes.h>
 +
 +/ {
 +	#address-cells = <1>;
@@ -237,7 +240,6 @@
 +			label = "orange:internet";
 +			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
 +		};
-+	};
 +};
 +
 +&uart0 {
