@@ -221,12 +221,12 @@
 +	leds {
 +		compatible = "gpio-leds";
 +
-+		led_system_blue: system_blue {
++		system_blue {
 +			label = "blue:system";
 +			gpios = <&pio 9 GPIO_ACTIVE_LOW>;
 +		};
 +
-+		led_system_orange: system_orange {
++		system_orange {
 +			label = "orange:system";
 +			gpios = <&pio 10 GPIO_ACTIVE_LOW>;
 +		};
