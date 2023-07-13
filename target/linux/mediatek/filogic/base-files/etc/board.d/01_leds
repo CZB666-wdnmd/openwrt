@@ -6,6 +6,9 @@ board=$(board_name)
 board_config_update
 
 case $board in
+xiaomi,wr30u)
+	ucidef_set_led_netdev "port1" "port1" "blue:internet" "port1"
+	;;
 cudy,wr3000-v1)
 	ucidef_set_led_netdev "wan" "wan" "blue:wan" "wan"
 	;;
