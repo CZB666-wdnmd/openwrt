@@ -223,22 +223,22 @@
 +
 +		system_blue {
 +			label = "blue:system";
-+			gpios = <&pio 9 GPIO_ACTIVE_LOW>;
++			gpios = <&gpio 9 GPIO_ACTIVE_LOW>;
 +		};
 +
 +		system_orange {
 +			label = "orange:system";
-+			gpios = <&pio 10 GPIO_ACTIVE_LOW>;
++			gpios = <&gpio 10 GPIO_ACTIVE_LOW>;
 +		};
 +
 +		internet_blue {
 +			label = "blue:internet";
-+			gpios = <&pio 11 GPIO_ACTIVE_LOW>;
++			gpios = <&gpio 11 GPIO_ACTIVE_LOW>;
 +		};
 +
 +		internet_orange {
 +			label = "orange:internet";
-+			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
++			gpios = <&gpio 12 GPIO_ACTIVE_LOW>;
 +		};
 + };
 +};
