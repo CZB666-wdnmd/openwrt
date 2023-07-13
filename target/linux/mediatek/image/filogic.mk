@@ -421,4 +421,4 @@ define Device/xiaomi_wr30u
   # ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr3
   # ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot qihoo_360t7
 endef
-TARGET_DEVICES += qihoo_360t7
+TARGET_DEVICES += xiaomi_wr30u
